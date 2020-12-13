@@ -14,7 +14,6 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(event_params)
     # authorize @event
-    # @costume.user = current_user
     if @event.save
       flash.notice = "Event created!"
       redirect_to event_path(@event)
@@ -41,7 +40,7 @@ class EventsController < ApplicationController
 
   def destroy
     find_event
-    # authorize @costume
+    # authorize @event
     @event.destroy
     flash.notice = "Event deleted!"
     redirect_to events_path
@@ -50,7 +49,7 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    params.require(:event).permit(:title, :date_start, :date_end, :description)
+    params.require(:event).permit(:title, :date_start, :date_end, :description, :photo)
   end
 
   def find_event
