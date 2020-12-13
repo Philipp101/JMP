@@ -1,0 +1,14 @@
+<%= simple_form_for [@event] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :date_start %>
+  <%= f.input :date_end%>
+  <%= f.input :description %>
+  <label class="btn btn-success">
+    Upload picture (optional)
+    <span style="display:none;">
+      <%= f.input :photo, as: :file %>
+    </span>
+  </label>
+  <br>
+  <%= f.button :submit, "Add event", class: "btn btn-success" %>
+<% end %>
