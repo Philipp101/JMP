@@ -23,6 +23,9 @@ gem 'redis', '~> 4.0'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Active Storage variant
+
+gem 'underscore-rails', '~> 1.8', '>= 1.8.3'
+
 # gem 'image_processing', '~> 1.2'
 gem 'cloudinary', '~> 1.16.0'
 # Reduces boot times through caching; required in config/boot.rb
