@@ -38,17 +38,17 @@ html, body {
     background-color: rgba(0,0,0,.3);
   }
   &:first-child {
-    background-image: url(https://i.postimg.cc/kXq9Qmnj/bgd1.jpg);
+    background-image: url(https://78.media.tumblr.com/eddc70939c290ed0857ab9f6fc28993c/tumblr_oy13gs1fDi1vq64mxo4_1280.gif);
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
       transform: translateY($parallax-offset /2);
     }
   }
   &:nth-child(2) {
-    background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
+    background-image: url(https://78.media.tumblr.com/67f37f09a5ce275192ddafc8f77af083/tumblr_oy13gs1fDi1vq64mxo1_500.gif);
   }
   &:nth-child(3) {
-    background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
+    background-image: url(https://78.media.tumblr.com/42e31d431252210a6c9700fe1c3b8f28/tumblr_oy13gs1fDi1vq64mxo2_500.gif);
   }
 }
 
@@ -66,8 +66,9 @@ html, body {
   justify-content: center;
   text-align: center;
   flex-flow: column nowrap;
-  color: #fff;
-  font-family: Montserrat;
+  color: yellow;
+  font-family: 'Nosifer', cursive;
+  text-shadow: 0 0 4px hotpink, 0 0 8px magenta, 0 0 16px red;
   text-transform: uppercase;
   transform: translateY($content-offset);
   will-change: transform;
