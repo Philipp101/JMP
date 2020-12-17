@@ -38,17 +38,17 @@ html, body {
     background-color: rgba(0,0,0,.3);
   }
   &:first-child {
-    background-image: url(https://78.media.tumblr.com/eddc70939c290ed0857ab9f6fc28993c/tumblr_oy13gs1fDi1vq64mxo4_1280.gif);
+    background-image: url(https://media.giphy.com/media/rjeLONgh1si8lPTq6W/giphy.gif);
     transform: translateY(-$parallax-offset / 2);
     .content-wrapper {
       transform: translateY($parallax-offset /2);
     }
   }
   &:nth-child(2) {
-    background-image: url(https://78.media.tumblr.com/67f37f09a5ce275192ddafc8f77af083/tumblr_oy13gs1fDi1vq64mxo1_500.gif);
+    background-image: url(https://media.giphy.com/media/EYvwRdhPZD7bgq5r9d/giphy.gif);
   }
   &:nth-child(3) {
-    background-image: url(https://78.media.tumblr.com/42e31d431252210a6c9700fe1c3b8f28/tumblr_oy13gs1fDi1vq64mxo2_500.gif);
+    background-image: url(https://media.giphy.com/media/3WBZCHRNV4e3DxQoAN/giphy.gif);
   }
 }
 
@@ -66,8 +66,8 @@ html, body {
   justify-content: center;
   text-align: center;
   flex-flow: column nowrap;
-  color: yellow;
-  font-family: 'Nosifer', cursive;
+  color: #3dd626;
+  font-family: 'Tomorrow', sans-serif;
   text-shadow: 0 0 4px hotpink, 0 0 8px magenta, 0 0 16px red;
   text-transform: uppercase;
   transform: translateY($content-offset);

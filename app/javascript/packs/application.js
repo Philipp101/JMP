@@ -35,3 +35,21 @@ document.addEventListener('turbolinks:load', () => {
   parallaxScroll();
 });
 
+$.fn.blink = function (options) {
+    var defaults = { delay: 1500 };
+    var options = $.extend(defaults, options);
+    return $(this).each(function (idx, itm) {
+      setInterval(function () {
+        if ($(itm).css("visibility") === "visible") {
+          $(itm).css('visibility', 'hidden');
+        }
+        else {
+          $(itm).css('visibility', 'visible');
+        }
+      }, options.delay);
+    });
+  }
+
+$(document).ready(function() {
+      $('.blink').blink({delay: 1200});
+    });
