@@ -5,6 +5,13 @@
       <div><%= render 'shared/navbar' %></div>
       <p class="content-title blink">Jonathan Penca</p>
       <p class="content-subtitle"></p>
+      <div class="row justify-content-start">
+        <% @events.each do |event| %>
+            <div class="col-3 my-3">
+            <%= render partial: 'shared/card-event', locals: { event: event } %>
+            </div>
+        <% end %>
+      </div>
     </div>
   </section>
   <section class="background">
