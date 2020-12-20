@@ -25,7 +25,6 @@ require("channels")
 // External imports
 import "bootstrap";
 import { parallaxScroll } from "../plugins/parallax";
-
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -50,6 +49,6 @@ $.fn.blink = function (options) {
     });
   }
 
-$(document).ready(function() {
-      $('.blink').blink({delay: 1200});
-    });
+ $(document).ready(function() {
+       $('.blink').blink({delay: 1200});
+     });
