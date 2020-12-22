@@ -3,15 +3,21 @@
   <section class="background">
     <div class="content-wrapper">
       <div><%= render 'shared/navbar' %></div>
-      <p class="content-title blink">Jonathan Penca</p>
+      <br>
+      <p class="content-title blink ml-5">Next Events</p>
       <p class="content-subtitle"></p>
-      <div class="row justify-content-start">
-        <% @events.each do |event| %>
-            <div class="col-3 my-3">
-            <%= render partial: 'shared/card-event', locals: { event: event } %>
+      <div class="ml-5">
+        <% @events.first(2).each do |event| %>
+            <div class="my-3">
+            <%= render partial: 'shared/list-event', locals: { event: event } %>
+            <br>
             </div>
         <% end %>
+        <div class="px-2 pb-2">
+          <%= link_to "View all Events", events_path, class: "btn btn-primary", style: "font-size: 12px;" %>
+        </div>
       </div>
+
     </div>
   </section>
   <section class="background">

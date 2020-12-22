@@ -1,2 +1,12 @@
-<h1>here are all the events</h1>
-<p><%= @events.first(5) %></p>
+<div class="background">
+  <div class="content-wrapper">
+    <div><%= render 'shared/navbar' %></div>
+    <div class="row justify-content-center">
+      <% @events.each do |event| %>
+        <div class="col-3 my-3">
+        <%= render partial: 'shared/card-event', locals: { event: event } %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
